@@ -97,3 +97,52 @@ elif pilihan_crust == 3: # harga jika harga jika crust no 3
         harga += 102727# tambahan harga jika ukuran large
 
 elif pilihan_crust == 4: # harga jika crust no 4
+elif pilihan_crust == 4: # harga jika crust no 4
+    harga += 57273 #harga jika ukuran personal
+    if pilihan_size == 1:
+        harga += 0
+    elif pilihan_size == 2:
+        harga += 66364 # tambahan harga jika ukuran regular
+    else:
+        harga += 107273 # tambahan harga jika ukuran large
+
+else: #harga jika crust no 5
+    harga -+ 57273 #harga jika ukuran personal
+    if pilihan_size == 1:
+        harga += 0
+    elif pilihan_size == 2:
+        harga += 66364 # tambahan harga jika ukuran regular
+    else:
+        harga += 102727 # tambahan harga jika ukuran large
+
+# untuk menghitung tambahan pizza
+if keju == True:
+    tambahan_keju = 'Tambah Keju'
+    if pilihan_size == 1:
+        harga += 13636 # harga tambahan keju jika size personal
+    elif pilihan_size == 2:
+        harga += 16364 # harga tambahan keju jika size regular
+    else:
+        harga += 19091 # harga tambahan keju jika size large
+
+else:
+    tambahan_keju = 'Tanpa Tambahan Keju'
+
+total = ("{:,}".format(harga))
+# Akan menampilkan total dan ucapan terimakasih 
+print(f'''
+================================================
+     BERIKUT MERUPAKAN STRUK TAGIHAN ANDA
+================================================
+Pesanan : {toping[(pilihan_toping)-1]}
+Crust   : {crust[(pilihan_crust)-1]}
+Size    : {size[(pilihan_size)-1}
+Keju    : {tambahan_keju}
+================================================
+Total tagihan anda adalah : Rp. {total}
+================================================
+         TERIMA KASIH TELAH BERKUNJUNG 
+                    DAN
+         SELAMAT MENIKMATI PIZZA ANDA
+================================================
+''')
