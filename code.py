@@ -97,7 +97,6 @@ elif pilihan_crust == 3: # harga jika harga jika crust no 3
         harga += 102727# tambahan harga jika ukuran large
 
 elif pilihan_crust == 4: # harga jika crust no 4
-elif pilihan_crust == 4: # harga jika crust no 4
     harga += 57273 #harga jika ukuran personal
     if pilihan_size == 1:
         harga += 0
