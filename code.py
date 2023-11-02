@@ -47,5 +47,3 @@ if konfirmasi == "y":
     for i, daftar_size in enumerate(size):
         print(i+1, daftar_size)
     pilihan_size = int(input('Masukkan Size pizza pilihan anda (1-3) : '))
-
-# Akan menampilkan penawaran keju
